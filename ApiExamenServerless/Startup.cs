@@ -29,7 +29,7 @@ namespace ApiExamenMR
         // This method gets called by the runtime. Use this method to add services to the container
         public void ConfigureServices(IServiceCollection services)
         {
-            string cadenaconexion = Configuration.GetConnectionString("Mariadb");
+            string cadenaconexion = Configuration.GetConnectionString("Aws");
             services.AddDbContext<EventosContext>(options => options.UseMySql(cadenaconexion, ServerVersion.AutoDetect(cadenaconexion)));
             services.AddTransient<RepositoryEventos>();
             services.AddCors(x => {

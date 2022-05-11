@@ -14,5 +14,5 @@
     "template"      : "serverless.template",
     "template-parameters" : "",
     "s3-bucket"           : "s3-imagenes-doctores-mrc",
-    "stack-name"          : "ApiExamen"
+    "stack-name"          : "ApiExamenF"
 }
